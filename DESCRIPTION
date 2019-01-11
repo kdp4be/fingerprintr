@@ -1,0 +1,17 @@
+Package: fingerprintr
+Type: Package
+Title: A Quality Metric for Fingerprints
+Version: 0.1.0
+Author: Adele Peskin, Karen Kafadar, Karen Pan
+Maintainer: Karen Pan <kdp4be@virginia.edu>
+Description: This package implements the Peskin and Kafadar algorithm (manuscript in progress) providing quality scores for individual fingerprint minutiae.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 0.12.17)
+LinkingTo: Rcpp
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
