@@ -1,6 +1,6 @@
 ---
 title: "FingerprintR (name subject to change)"
-author: "Adele Peskin, Karen Kafadar, Karen Pan"
+author: "Karen Kafadar, Karen Pan"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-This package contains code for the Peskin and Kafadar algorithm (manuscript in preparation) for fingerprint minutiae quality scores. There is one main function for outputting quality metrics and several helper functions.
+This package contains code for the Contrast Gradient algorithm (manuscript in preparation) for fingerprint minutiae quality scores. There is one main function for outputting quality metrics and several helper functions.
 
 Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
 

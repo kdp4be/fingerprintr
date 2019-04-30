@@ -1,2 +1,2 @@
 # fingerprint_package
-fingerprint r package (peskin &amp; kafadar algorithm)
+fingerprint r package (contrast gradient algorithm)

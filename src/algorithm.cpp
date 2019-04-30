@@ -2,6 +2,10 @@
 
 using namespace Rcpp;
 
+// We would like to thank Dr. Adele Peskin for vital discussion and conversation 
+// leading to the creation and development of the Contrast Gradient Algorithm 
+// as well as an unpublished manuscript [@pk_unpub].
+
 
 
 //' Find the gradient of intensity between the dark and light regions defining a minutiae point.
