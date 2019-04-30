@@ -14,6 +14,7 @@
 #   Test Package:              'Ctrl + Shift + T'
 
 
+
 # We would like to thank Dr. Adele Peskin for vital discussion and conversation 
 # leading to the creation and development of the Contrast Gradient Algorithm 
 # as well as an unpublished manuscript.
@@ -51,19 +52,22 @@ convert_image <- function(image_file, image_format) {
 
 
 
-#' Process an file of features (minutiae), assuming x and y pixel locations are contained in the first two columns.
+#' Process an file of features (minutiae) location.
 #'
 #' @param feature_file Matrix or data frame containing feature information.
+#' @param lqm Whether the minutiae file is from LQM (x, y pixels in 2nd, 3rd columns)'
 #' @return A processed numeric matrix containing the x and y pixel locations of each minutiae.
 #' @examples
 #' data(G080_min)
 #' import_features(G080_min)
-import_features <- function(feature_file) {
+import_features <- function(feature_file, lqm = FALSE) {
 	# assume feature x, y are in first and second columns
 	# wrapper function; currently can just use a data matrix with minutiae values. 
 		# however, if assuming LQM input, then the x and y locations are the second and third columns
-	features <- feature_file[,c(1,2)]
-	features <- as.matrix(features)
+	if (lqm == TRUE)
+		features <- as.matrix(feature_file[,c(2, 3)])
+	else
+		features <- as.matrix(feature_file[,c(1, 2)])
 	return(features)
 }
 
