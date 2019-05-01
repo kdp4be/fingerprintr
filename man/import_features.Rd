@@ -2,18 +2,20 @@
 % Please edit documentation in R/data_input.R
 \name{import_features}
 \alias{import_features}
-\title{Process an file of features (minutiae). Currently assumes LQM input format (columns, in order: minutiae type, x location, y location, ...).}
+\title{Process an file of features (minutiae) location.}
 \usage{
-import_features(feature_file)
+import_features(feature_file, lqm = FALSE)
 }
 \arguments{
 \item{feature_file}{Matrix or data frame containing feature information.}
+
+\item{lqm}{Whether the minutiae file is from LQM (x, y pixels in 2nd, 3rd columns)'}
 }
 \value{
 A processed numeric matrix containing the x and y pixel locations of each minutiae.
 }
 \description{
-Process an file of features (minutiae). Currently assumes LQM input format (columns, in order: minutiae type, x location, y location, ...).
+Process an file of features (minutiae) location.
 }
 \examples{
 data(G080_min)

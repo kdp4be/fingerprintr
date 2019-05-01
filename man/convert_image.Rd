@@ -18,6 +18,6 @@ A processed numeric matrix containing image information.
 Process an image file to text.
 }
 \examples{
-data(G080_image)
+G080_image <- read.bmp("data/G080_image.bmp")
 convert_image(G080_image, "bmp")
 }
